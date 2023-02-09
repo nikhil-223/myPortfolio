@@ -4,12 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    font-size: 12px;
+    --text-color:rgb(242, 216, 216);
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     background: #2f364b;
-    font-size: 12px;
     font-family: 'Roboto Condensed', sans-serif;
     
 }

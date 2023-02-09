@@ -4,7 +4,7 @@ import './Education.css'
 const Education = (props,ref) => {
     
   return (
-    <section id='education' ref={ref}>
+    <section id='education'>
     </section>
   )
 }

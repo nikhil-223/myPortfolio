@@ -1,0 +1,12 @@
+#alert{
+    position: fixed;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(117, 185, 155);
+    top: 4rem;
+    z-index: 55;
+    display: flex;
+    align-items: center;
+    padding-left: 4vw;
+    font-size: 1.3rem;
+}

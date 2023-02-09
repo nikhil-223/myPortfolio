@@ -9,7 +9,7 @@
 	height: 3rem;
     color: #c9b2b2;
 	z-index: 5;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	padding-left: 5rem;
 }
 .navbar div{
@@ -51,7 +51,7 @@
 }
 
 .bg-normal{
-	animation: navcolorback 0.1s forwards;
+	animation: navcolorback 0.05s forwards;
 	
 }
 @keyframes navcolorback{
