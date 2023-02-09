@@ -11,10 +11,10 @@ const Contact = () => {
 						You can fill this form to contact me and below are my links{" "}
 					</span>
 					<div className="contact-links">
-						<i class=" fa-brands fa-linkedin"></i>
-						<i class=" fa-brands fa-square-github"></i>
-						<i class=" fa-brands fa-square-facebook"></i>
-						<i class=" fa-brands fa-square-instagram"></i>
+						<i className=" fa-brands fa-linkedin"></i>
+						<i className=" fa-brands fa-square-github"></i>
+						<i className=" fa-brands fa-square-facebook"></i>
+						<i className=" fa-brands fa-square-instagram"></i>
 					</div>
 				</div>
 				<div className="contact-form">

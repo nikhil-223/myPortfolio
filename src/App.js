@@ -1,6 +1,6 @@
 import React from 'react'
 import "./App.css"
-import {Navbar,Education, About, Projects, Contact, Alert} from './components/index'
+import {Navbar,Education, About, Projects, Contact, Alert, Footer} from './components/index'
 import { useInView } from 'react-intersection-observer'
 const App = () => {
   const {ref:aboutref, inView:isvisible}= useInView();
@@ -13,6 +13,7 @@ const App = () => {
 			<div ref={navbarref}><Education  />
 			<Projects />
 			<Contact/></div>
+			<Footer/>
 		</>
 	);
 }
