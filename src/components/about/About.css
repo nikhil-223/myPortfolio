@@ -1,0 +1,100 @@
+#about {
+	height: 100.5vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-container {
+    width:100%;
+	height: 100%;
+    backdrop-filter: blur(0.2rem);
+	background-color: rgba(80, 148, 140, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    text-shadow: 0.2rem 0.15rem 0.1rem black;
+}
+
+.profile-info{
+    width: 60%;
+    height: 100%;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.profile-pic{
+    position: relative;
+    min-width: 30rem;
+    right: 7vw;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    
+}
+.profile-pic img{
+    height: 100%;
+    width: 25rem;
+     filter: drop-shadow(5px 5px 5px #150909);
+}
+
+
+.profile-info div:nth-child(1){
+    margin-top: 7rem;
+}
+.profile-info div:nth-child(2){
+    font-size: 5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.profile-info div:nth-child(2) span:nth-child(1){
+    color: rgb(164, 163, 206);
+}
+.profile-info div:nth-child(3){
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+.visibletext{
+    animation: faded 1s;
+}
+@keyframes faded{
+    0%{
+        opacity: 0;
+        filter: blur(1);
+        transform: translate(-50%);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0%);
+    }
+}
+.visibleimg{
+    animation: faded 1s ;
+}
+@keyframes faded{
+    0%{
+        opacity: 0;
+        filter: blur(1);
+        transform: translate(-50%);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0%);
+    }
+}
+.hidden{
+    opacity: 0;
+}
