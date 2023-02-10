@@ -10,10 +10,10 @@ const App = () => {
 			<Navbar visible={down}/>
 			<Alert/>
 			<About ref={aboutref} visible={isvisible}/>
-			<div ref={navbarref}><Education  />
+			<div ref={navbarref}><Education />
 			<Projects />
-			<Contact/></div>
-			<Footer/>
+			<Contact/>
+			<Footer/></div>
 		</>
 	);
 }

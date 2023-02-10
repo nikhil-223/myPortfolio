@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 import './Education.css'
 
 const Education = (props,ref) => {
-    
+ 
   return (
     <section id='education'>
     </section>

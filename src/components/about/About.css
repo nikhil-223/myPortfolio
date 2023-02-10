@@ -23,7 +23,7 @@
     font-size: 5rem;
     font-weight: 800;
     margin-left: 10rem;
-    color: white;
+    color: #c7bebe;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,12 +40,12 @@
     gap: 2rem;
 }
 .profile-info div:nth-child(2) span:nth-child(1){
-    color: rgb(164, 163, 206);
+    color: var(--bg-color2);
 }
 .profile-info div:nth-child(3){
     width: 70%;
     margin-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 100;
     font-family: 'Poppins', sans-serif;
 }
@@ -63,7 +63,7 @@
 .profile-pic img{
     height: 100%;
     width: 35rem;
-     filter: drop-shadow(5px 5px 5px #150909);
+     filter: drop-shadow(7px 5px 7px #000000);
 }
 
 .visibletext{
@@ -73,7 +73,7 @@
     0%{
         opacity: 0;
         filter: blur(1);
-        transform: translate(-50%);
+        transform: translate(-30%);
     }
     100%{
         opacity: 1;
@@ -88,7 +88,7 @@
     0%{
         opacity: 0;
         filter: blur(1);
-        transform: translate(-50%);
+        transform: translate(-30%);
     }
     100%{
         opacity: 1;

@@ -1,5 +1,5 @@
 #education{
-    background-color: #d96459;
+    background-color: var(--bg-color2);
     height: 100vh;
 }
 .navref{

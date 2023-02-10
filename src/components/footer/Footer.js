@@ -9,38 +9,17 @@ const Footer = () => {
         <h3>Nikhil</h3>
         <ul>
           <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
         </ul>
       </div>
       <div className='footer-item'>
         <h3>Nikhil</h3>
         <ul>
           <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
         </ul>
       </div>
       <div className='footer-item'>
         <h3>Nikhil</h3>
         <ul>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
-          <li>lame</li>
           <li>lame</li>
         </ul>
       </div>

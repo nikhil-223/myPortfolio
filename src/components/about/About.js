@@ -14,7 +14,7 @@ const About = (props,ref) => {
 						<span>I'm Nikhil Shekhawat</span>
 					</div>
 					<div>
-						<span>Front-end</span>
+						<span>Full-Stack</span>
 						<span >Developer</span>
 					</div>
 					<div>

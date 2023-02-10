@@ -11,10 +11,18 @@ const Contact = () => {
 						You can fill this form to contact me and below are my links{" "}
 					</span>
 					<div className="contact-links">
-						<i className=" fa-brands fa-linkedin"></i>
-						<i className=" fa-brands fa-square-github"></i>
-						<i className=" fa-brands fa-square-facebook"></i>
-						<i className=" fa-brands fa-square-instagram"></i>
+						<a
+							href="https://www.linkedin.com/in/nikhil-shekhawat-986385179"
+							target={"_blank"}
+							rel="noreferrer">
+							<i className=" fa-brands fa-linkedin"></i>
+						</a>
+						<a
+							href="https://github.com/nikhil-223"
+							target={"_blank"}
+							rel="noreferrer">
+							<i className=" fa-brands fa-square-github"></i>
+						</a>
 					</div>
 				</div>
 				<div className="contact-form">
