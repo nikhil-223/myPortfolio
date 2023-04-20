@@ -1,18 +1,57 @@
 #footer{
-    height: 60vh;
+    height: 25rem;
     width: 100%;
     color: white;
     font-size: 1.5rem;
     background-color: rgb(23, 25, 33);
-    padding: 5rem;
-    display: grid;
-    grid-template-columns: auto auto auto auto 30vw;
+    display: flex;
+    justify-content: center;
 }
 #footer li{
     text-decoration: none;
     list-style: none;
     height: 3rem;
 }
-.footer-item h3{
-    height: 4rem;
+.footer-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.about-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-name{
+    width: 60%;
+}
+.about-name span{
+    font-size: 1.3rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.copyright .line{
+    height: 0.02rem;
+    width: 100%;
+    background-color: white;
+}
+.copyright .copyright-content{
+    width: 100%;
+    text-align: center;
+}
+.footer-container h3{
+    margin-bottom: 1.5rem;
+}
+
+.social-links{
+    display: flex;
+    gap: 1rem;
 }

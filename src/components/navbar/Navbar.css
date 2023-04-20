@@ -6,11 +6,12 @@
 	align-items: center;
 	gap: 1.5rem;
 	width: 100%;
-	height: 3rem;
-    color: #c9b2b2;
+	height: 4.5rem;
+    color: black;
 	z-index: 5;
 	font-size: 1.5rem;
 	padding-left: 5rem;
+	background: #ffffff;
 }
 .navbar div{
 	position: relative;
@@ -20,6 +21,8 @@
 	height: auto;
 	display: flex;
 	align-items: center;
+	margin-left: auto;
+	margin-right: 2rem;
 	gap: 1.5rem;
 }
 .menu_item {
@@ -32,7 +35,7 @@
 }
 
 .menu_item:hover{
-    color: #ffffff;
+    text-decoration: underline;
 }
 
 .bg-white{
@@ -45,18 +48,19 @@
 		top: 0.5rem;
 	}
 	100%{
-		background-color: var(--bg-color4);
+		background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 		top: 0;
 	}
 }
 
 .bg-normal{
-	animation: navcolorback 0.05s forwards;
-	
+	animation: navcolorback 0.05s forwards;	
 }
+
 @keyframes navcolorback{
 	0%{
-		background-color: #1a2135;
+		background-color: #ffffff;
 		top: 0;
 	}
 	100%{
@@ -65,7 +69,7 @@
 	}
 }
 .nav-item-active{
-	color: white;
+	color: rgb(225, 88, 88);
 }
 
 .linecontainer{
@@ -85,11 +89,12 @@
 }
 
 .logo{
-	width: 2rem;
-	height: 2rem;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	overflow: hidden;
 }
-.logo svg{
+.logo img{
 	width: 100%;
-	height: 100%;
 }
 

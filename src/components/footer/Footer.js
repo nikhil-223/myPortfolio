@@ -1,33 +1,49 @@
-import React from 'react'
-import "./Footer.css"
+import React from "react";
+import "./Footer.css";
+import { TfiLinkedin } from "react-icons/tfi";
+import { SiGithub } from "react-icons/si";
+import { BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
-  return (
-    <div id='footer'>
-      <div className='footer-item'> jmbj,</div>
-      <div className='footer-item'>
-        <h3>Nikhil</h3>
-        <ul>
-          <li>lame</li>
-        </ul>
-      </div>
-      <div className='footer-item'>
-        <h3>Nikhil</h3>
-        <ul>
-          <li>lame</li>
-        </ul>
-      </div>
-      <div className='footer-item'>
-        <h3>Nikhil</h3>
-        <ul>
-          <li>lame</li>
-        </ul>
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  )
-}
+	return (
+		<div id="footer">
+			<div className="footer-container">
+				<div className="about-footer">
+					<div className="about-name">
+						<h3>Nikhil Shekhawat</h3>
+						<span>
+							I have worked on MERN stack and created various projects on
+							React-Redux
+						</span>
+					</div>
+					<div>
+						<h3>SOCIAL</h3>
+						<div className="social-links">
+							<a
+								href="https://www.linkedin.com/in/nikhil-shekhawat-986385179/"
+								target="blank">
+								<TfiLinkedin />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/nikhil-shekhawat-986385179/"
+								target="blank">
+								<SiGithub />
+							</a>
+							<a href="https://twitter.com/Nikhil70035706" target="blank">
+								<BsTwitter />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div className="copyright">
+					<div className="line"></div>
+					<div className="copyright-content">
+						© Copyright 2023. Made by Nikhil Shekhawat
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
 
-export default Footer
+export default Footer;
