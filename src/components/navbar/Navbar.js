@@ -36,22 +36,22 @@ const Navbar = (props) => {
 				<ul className="menu">
 					<li className="menu_item">
 						<a href="#home" className="nav-item-active" onClick={colorset}>
-							Home
+							HOME
 						</a>
 					</li>
 					<li className="menu_item">
 						<a href="#about" onClick={colorset}>
-							About
+							ABOUT
 						</a>
 					</li>
 					<li className="menu_item">
 						<a href="#projects" onClick={colorset}>
-							Projects
+							PROJECTS
 						</a>
 					</li>
 					<li className="menu_item">
 						<a href="#contact" onClick={colorset}>
-							Contact
+							CONTACT
 						</a>
 					</li>
 				</ul>

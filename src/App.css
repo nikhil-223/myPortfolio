@@ -6,7 +6,7 @@
 }
 :root{
     font-size: 12px;
-    --text-color:rgb(242, 216, 216);
+    --text-color:#0b0f27;
     --bg-color1:#0b0f27;
     --bg-color2:#6a8c91;
     --bg-color3:#E83F6F;
@@ -14,14 +14,15 @@
     --bg-color5:#F2EFC7;
     --bg-color6:#E71D36;
     --bg-color7:#1a7569;
-	--bg-color8:#1c4a44;
-    --bg-contact-color9:#203841;
-    --bg-contact-color10:#1a2135;
-    --bg-contact-color11:#2d6c5c;
+	--bg-color8:#e4eced;
+    --bg-contact-color9:#d5e5eb;
+    --bg-contact-color10:#8bbfcd;
+    --bg-contact-color11:#FAFAFA;
 }
 html{
     scroll-behavior: smooth;
 }
+
 body{
     background: var(--bg-color1);
     font-family: 'Roboto Condensed', sans-serif;
@@ -31,4 +32,10 @@ a{
     list-style: none;
     text-decoration: none;
     color: unset;
+}
+
+@media only screen and (max-width: 950px) {
+	html {
+		font-size: 12px;
+	}
 }

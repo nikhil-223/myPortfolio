@@ -8,7 +8,8 @@ const Contact = () => {
 				<div className="contact-me">
 					<span>Contact Me</span>
 					<span>
-						You can fill this form to contact me and below are my links{" "}
+						Feel free to Contact me by submitting the form and I will get
+						back to you as soon as possible{" "}
 					</span>
 					<div className="contact-links">
 						<a
@@ -28,11 +29,11 @@ const Contact = () => {
 				<div className="contact-form">
 					<div>
 						<label htmlFor="name">Name</label>
-						<input type="text" id="name" />
+						<input type="text" id="name" placeholder="Enter your name" />
 					</div>
 					<div>
 						<label htmlFor="email">Email</label>
-						<input type="email" id="email" />
+						<input type="email" id="email" placeholder="Enter your e-mail" />
 					</div>
 					<div>
 						<label htmlFor="message">Message</label>
