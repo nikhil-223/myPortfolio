@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
-import profilePic from '../../images/profile.jpg'
+import profilePic from "../../images/profile.jpg";
 import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
+import { useState } from "react";
 
 const Navbar = (props) => {
 	const { visible } = props;
+	const [menuVisible, setmenuVisible] = useState(false);
+
+	const showMenu = (e) => {
+		if (menuVisible) {
+			document.querySelector(".menu").style.left = "100%";
+			document.body.style.overflow = "scroll";
+			setmenuVisible(false);
+		} else {
+			document.querySelector(".menu").style.left = "0";
+			document.body.style.overflow = "hidden";
+			setmenuVisible(true);
+		}
+	};
 	const colorset = (e) => {
+		showMenu();
 		document
 			.querySelector('[href="#home"]')
 			.classList.remove("nav-item-active");
@@ -22,7 +38,6 @@ const Navbar = (props) => {
 	};
 	// for svg animation
 
-
 	return (
 		<>
 			<nav className={`navbar ${visible ? "bg-white" : "bg-normal"}`}>
@@ -32,7 +47,7 @@ const Navbar = (props) => {
 				<div>
 					<span>NIKHIL SHEKHAWAT</span>
 				</div>
-				<ul className="menu">
+				<ul className="menu" style={{ left: "100%" }}>
 					<li className="menu_item">
 						<a href="#home" className="nav-item-active" onClick={colorset}>
 							HOME
@@ -54,8 +69,8 @@ const Navbar = (props) => {
 						</a>
 					</li>
 				</ul>
-				<div className="hamburger">
-					<FiMenu />
+				<div className="hamburger" onClick={showMenu}>
+					{menuVisible ? <MdClose /> : <FiMenu />}
 				</div>
 			</nav>
 			<div className="linecontainer">

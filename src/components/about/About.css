@@ -40,7 +40,7 @@
 }
 .about-container .about-gtkm {
 	padding: 2rem;
-	height: 50rem;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
@@ -70,7 +70,7 @@
 
 .about-container .about-skills {
 	padding: 2rem;
-	height: 50rem;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
@@ -98,7 +98,7 @@
 		font-size: 1.5rem;
 	}
 	#about {
-		padding: 3rem 2rem;
+		padding:7rem 2rem 3rem 2rem;
 	}
 	.about-container {
 		grid-template-columns: 100%;
@@ -113,6 +113,9 @@
 		justify-content: center;
 		grid-area: 1/1/2/2;
 		gap: 1.9rem;
+	}
+	.about-skills{
+		margin-top: 5rem;
 	}
 	.about-header .about-header-title {
 		font-size: 3rem;

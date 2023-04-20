@@ -35,7 +35,7 @@
 }
 .contact-me span:nth-child(2) {
 	position: relative;
-	height: 3.67rem;
+	height: auto;
 	font-size: 1.33rem;
 }
 .contact-form {
@@ -120,7 +120,7 @@ input[name='name'],input[name='email'] {
 		padding: 2rem 3rem;
 	}
 	.contact-form {
-		padding: 3rem;
+		padding:1rem 3rem;
 		font-size: 1.5rem;
 		width: 100%;
 		display: flex;

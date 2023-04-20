@@ -25,6 +25,7 @@
 	margin-left: auto;
 	margin-right: 2rem;
 	gap: 1.5rem;
+	transition: all 0.5s;
 }
 .menu_item {
 	text-decoration: none;
@@ -95,6 +96,7 @@
 }
 .hamburger{
 	display: none;
+	font-size: 2.3rem;
 }
 
 @media only screen and (max-width: 950px) {
@@ -102,7 +104,15 @@
 		font-size: 1.8rem;
 	}
 	.menu{
-		display: none;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		background-color: #fafafa;
+		flex-direction: column;
+		padding-top: 70%;
+		width: 100%;
+		height: 100vh;
+		font-size: 2.5rem;
 	}
 	.hamburger{
 		display: block;

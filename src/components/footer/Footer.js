@@ -17,7 +17,6 @@ const Footer = () => {
 						</span>
 					</div>
 					<div>
-						<h3>SOCIAL</h3>
 						<div className="social-links">
 							<a
 								href="https://www.linkedin.com/in/nikhil-shekhawat-986385179/"
