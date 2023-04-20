@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Navbar.css";
 import profilePic from "../../images/profile.jpg";
 import { FiMenu } from "react-icons/fi";
@@ -45,7 +45,7 @@ const Navbar = (props) => {
 					<img src={profilePic} alt="profile" />
 				</div>
 				<div>
-					<span>NIKHIL SHEKHAWAT</span>
+					<span>NIKHIL SHEKHAWAT</span> 
 				</div>
 				<ul className="menu" style={{ left: "100%" }}>
 					<li className="menu_item">

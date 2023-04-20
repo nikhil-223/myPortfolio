@@ -61,7 +61,7 @@ const About = (props, ref) => {
 					<div className="about-skills-title">My Skills</div>
 					<div className="skill-set">
 						{skills.map((item) => {
-							return <Skill skill={item} />;
+							return <Skill key={item} skill={item} />;
 						})}
 					</div>
 				</div>
