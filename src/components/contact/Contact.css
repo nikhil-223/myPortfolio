@@ -57,13 +57,13 @@
 	justify-content: space-between;
 }
 .contact-form div textarea,
-input {
+input[name='name'],input[name='email'] {
 	height: 3.25rem;
 	border-radius: 0.5rem;
 	padding: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.34);
 }
-.contact-form div input {
+.contact-form div input[name='name'],input[name='email'] {
 	background-color: var(--bg-color8);
 	outline: none;
 	border: none;
@@ -78,17 +78,22 @@ input {
 .contact-form div input:focus {
 	border: none;
 }
-.contact-form button {
-	position: relative;
-	width: 9.17rem;
-	height: 2.83rem;
+.contact-form .contact-button {
+	width: 9rem;
+	height: 3rem;
 	border: none;
-	top: 2rem;
 	background: rgb(189, 211, 196);
 	box-shadow: 1px 1px 3px 0.2px rgba(0, 0, 0, 0.33);
 	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: var(--text-color);
 	cursor: pointer;
+	font-size: 1.2rem;
+}
+.contact-form .contact-button:hover{
+    transform: scale(1.02);
 }
 .contact-links {
 	position: relative;
@@ -99,14 +104,18 @@ input {
 	justify-content: flex-start;
 	font-size: 2.8rem;
 }
+.button-area{
+	margin-top: 2rem;
+}
 
 @media only screen and (max-width: 950px) {
 	.contact-box {
-		height: 65rem;
+		height: 60rem;
 		flex-direction: column;
 	}
 	.contact-me {
-		width: 100%;
+		width: 90%;
+		margin: 2rem auto;
 		height: auto;
 		padding: 2rem 3rem;
 	}

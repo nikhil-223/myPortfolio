@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Navbar.css";
 import profilePic from '../../images/profile.jpg'
+import { FiMenu } from "react-icons/fi";
 
 const Navbar = (props) => {
 	const { visible } = props;
@@ -29,9 +30,7 @@ const Navbar = (props) => {
 					<img src={profilePic} alt="profile" />
 				</div>
 				<div>
-					<span>
-						Nikhil Shekhawat
-					</span>
+					<span>NIKHIL SHEKHAWAT</span>
 				</div>
 				<ul className="menu">
 					<li className="menu_item">
@@ -55,6 +54,9 @@ const Navbar = (props) => {
 						</a>
 					</li>
 				</ul>
+				<div className="hamburger">
+					<FiMenu />
+				</div>
 			</nav>
 			<div className="linecontainer">
 				<svg

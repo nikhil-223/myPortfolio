@@ -34,9 +34,9 @@
 
 
 .profile-info div:nth-child(2){
-    font-size: 6rem;
+    font-size: 3rem;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 .profile-info div:nth-child(2) span:nth-child(1){
     color: var(--bg-color2);
@@ -93,4 +93,56 @@
 }
 .hidden{
     opacity: 0;
+}
+
+.links{
+    position: absolute;
+    left: 0;
+    height: 22rem;
+    width: 5rem;
+    background-color: white;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links .link-box{
+    width: 4rem ;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
+}
+.links .link-box a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links .link-box:hover{
+    background-color: rgb(224, 228, 230);
+}
+
+@media only screen and (max-width: 950px) {
+	.links{
+        display: none;
+    }
+    .profile-info div:nth-child(1){
+        display: flex;
+    }
+    .profile-info div:nth-child(1) span{
+        text-align: center;
+    }
+    .profile-info div:nth-child(2){
+    font-size: 3rem;
+    display: flex;
+    gap: 1rem;
+}
 }
