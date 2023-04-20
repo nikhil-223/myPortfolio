@@ -54,7 +54,7 @@ const About = (props, ref) => {
 						then don't hesitate to <b>contact</b> me.
 					</div>
 					<div className="about-gtkm-contact">
-						<a href="#contact">CONTACT</a>
+						<a href="#contact">Contact Me</a>
 					</div>
 				</div>
 				<div className="about-skills">

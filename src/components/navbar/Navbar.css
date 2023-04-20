@@ -34,10 +34,6 @@
     transition: all 0.2s;
 }
 
-.menu_item:hover{
-    text-decoration: underline;
-}
-
 .bg-white{
 	animation: navcolor 0.2s forwards;
 	

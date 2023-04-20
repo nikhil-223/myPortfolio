@@ -7,10 +7,10 @@ const Navbar = (props) => {
 	const { visible } = props;
 	const colorset = (e) => {
 		document
-			.querySelector('[href="#about"]')
+			.querySelector('[href="#home"]')
 			.classList.remove("nav-item-active");
 		document
-			.querySelector('[href="#education"]')
+			.querySelector('[href="#about"]')
 			.classList.remove("nav-item-active");
 		document
 			.querySelector('[href="#projects"]')
