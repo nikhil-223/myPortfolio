@@ -123,6 +123,5 @@
     .about-header .about-header-title::before {
 	width: 17rem;
 	transform: translate(-50%, 750%);
-
-}
+	}
 }
