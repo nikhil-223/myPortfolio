@@ -32,14 +32,6 @@ const Home = (props,ref) => {
 							<ImTwitter />
 						</a>
 					</div>
-					<div className="link-box">
-						<a
-							href="https://github.com/nikhil-223"
-							target={"_blank"}
-							rel="noreferrer">
-							<ImGithub />
-						</a>
-					</div>
 				</div>
 				<div className={`profile-info ${visible ? "visibletext" : "hidden"}`}>
 					<div>

@@ -1,4 +1,71 @@
-#projects{
-    height: auto;
-    background-color: #f1f1f1;
+#projects {
+	height: 100vh;
+	background-color: #f1f1f1;
+	display: flex;
+    flex-direction: column;
+	gap: 5rem;
+	align-items: center;
+	justify-content: flex-start;
+	padding:10rem 3rem 3rem 3rem;
+}
+.project {
+	width: 35rem;
+	height: 30rem;
+	box-shadow: 7px 9px 19px -5px rgba(138, 124, 124, 0.84);
+	border-radius: 1rem;
+    background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 2rem;
+    font-size: 1.8rem;
+}
+.project-list {
+    width: 100%;
+	height: auto;
+	background-color: #f1f1f1;
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.project-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project img {
+	width: 100%;
+	height: 65%;
+	border-radius: 1rem;
+	object-fit: contain;
+}
+.project a{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.project-read-more{
+    align-self: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.projects-header{
+    font-size: 3rem;
+}
+
+.projects-header::before{
+    content: "";
+	position: absolute;
+	width: 15rem;
+	left: 50%;
+	height: 0.5rem;
+	transform: translate(-50%, 800%);
+	border-radius: 0.5rem;
+	background-color: rgb(42, 114, 165);
 }
