@@ -1,6 +1,5 @@
 import React, { useRef ,forwardRef} from "react";
 import emailjs from "@emailjs/browser";
-import { FaAdjust} from 'react-icons/fa'
 import "./Contact.css";
 
 const Contact = (props,ref) => {
