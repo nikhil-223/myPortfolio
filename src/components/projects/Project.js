@@ -14,7 +14,7 @@ const Project = (props) => {
 				<a href={projectURL} target="blank">
 					<BsFillPlayFill />
 				</a>
-				<a href="">
+				<a href={projectURL}>
 					<FaReadme />
 				</a>
 			</div>
