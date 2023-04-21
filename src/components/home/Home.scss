@@ -10,14 +10,12 @@
 	height: 100%;
 	backdrop-filter: blur(0.2rem);
 	background-image: url("../../images/background.jpg");
-	// background-image: url('../../images/e71a7e8bb9bbfb7b9875acb9fc2ad864.png');
 	background-color: #eae9ea;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	// text-shadow: 0.2rem 0.15rem 0.1rem rgb(189, 167, 167);
 }
 
 .profile-info {
@@ -33,6 +31,17 @@
 	align-items: center;
 }
 
+.profile-info div:nth-child(1) span{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.profile-info div:nth-child(1) span h6{
+	font-size: 2.5rem;
+}
+.profile-info div:nth-child(1) span h3{
+	font-size:5rem;
+}
 .profile-info div:nth-child(2) {
 	font-size: 3rem;
 	display: flex;
@@ -48,7 +57,7 @@
 	text-align: center;
 	margin-top: 1rem;
 	font-size: 2rem;
-	font-weight: 100;
+	font-weight: 400;
 	font-family: "Poppins", sans-serif;
 }
 .project-button {
@@ -61,36 +70,20 @@
 	text-align: center;
 }
 
-.visibletext {
+.visible {
 	animation: faded 1s;
 }
 @keyframes faded {
 	0% {
 		opacity: 0;
-		filter: blur(1);
 		transform: translate(-30%);
 	}
 	100% {
 		opacity: 1;
-		filter: blur(0);
 		transform: translate(0%);
 	}
 }
-.visibleimg {
-	animation: faded 1s;
-}
-@keyframes faded {
-	0% {
-		opacity: 0;
-		filter: blur(1);
-		transform: translate(-30%);
-	}
-	100% {
-		opacity: 1;
-		filter: blur(0);
-		transform: translate(0%);
-	}
-}
+
 .hidden {
 	opacity: 0;
 }
@@ -132,15 +125,16 @@
 
 .scroll-indicator {
 	position: absolute;
+	display: flex;
 	bottom: 3rem;
 	width: 3rem;
 	height: 5rem;
 	background-color: white;
 	box-shadow: 0.1rem 0.3rem 2rem -1rem black;
 	border-radius: 1.5rem;
-	display: flex;
 	justify-content: center;
 	padding: auto;
+    transition: all 0.5s;
 }
 .scroll-inner {
 	width: 1rem;
@@ -150,6 +144,13 @@
 	border-radius: 1.5rem;
 	animation: scrollDown 1s linear infinite forwards;
 }
+.visibleScroll{
+	opacity:1 ;
+}
+.hideScroll{
+	opacity: 0;
+}
+
 @keyframes scrollDown {
 	0% {
 		transform: translatey(300%);

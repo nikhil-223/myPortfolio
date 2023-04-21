@@ -3,17 +3,20 @@ import "./App.css"
 import {Navbar,About, Home, Projects, Contact, Alert, Footer} from './components/index'
 import { useInView } from 'react-intersection-observer'
 const App = () => {
-  const {ref:aboutref, inView:isvisible}= useInView();
+  const {ref:homeref, inView:isvisible}= useInView();
   const { ref: navbarref, inView:down} = useInView();
+  const { ref: contactref, inView:contactVisible} = useInView();
   return (
 		<>
-			<Navbar visible={down}/>
-			<Alert/>
-			<Home ref={aboutref} visible={isvisible}/>
-			<div ref={navbarref}><About />
-			<Projects />
-			<Contact/>
-			<Footer/></div>
+			<Navbar aboutVisible={down} />
+			<Alert />
+			<Home ref={homeref} textVisible={isvisible} aboutVisible={down} />
+			<div ref={navbarref}>
+				<About />
+				<Projects />
+				<Contact ref={contactref} contactVisible={contactVisible} />
+				<Footer />
+			</div>
 		</>
 	);
 }

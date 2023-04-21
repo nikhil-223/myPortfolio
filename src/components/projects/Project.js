@@ -9,14 +9,14 @@ const Project = (props) => {
 			<img src={imgURL} alt={projectName} />
 			<div className="project-details">
 				<span>{projectName}</span>
-			</div>
-			<div className="project-read-more">
-				<a href={projectURL} target="blank">
-					<BsFillPlayFill />
-				</a>
-				<a href={projectURL}>
-					<FaReadme />
-				</a>
+				<div className="project-read-more">
+					<a href={projectURL} target="blank">
+						<BsFillPlayFill />
+					</a>
+					<a href={projectURL}>
+						<FaReadme />
+					</a>
+				</div>
 			</div>
 		</div>
 	);

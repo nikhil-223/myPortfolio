@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef ,forwardRef} from "react";
 import emailjs from "@emailjs/browser";
+import { FaAdjust} from 'react-icons/fa'
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = (props,ref) => {
+	const {contactVisible}=props;
+
 	const form = useRef();
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -26,7 +29,9 @@ const Contact = () => {
 	};
 	return (
 		<div id="contact">
-			<div className="contact-box">
+			<div
+				className={`contact-box ${contactVisible ? "visible" : "hidden"}`}
+				ref={ref}>
 				<div className="contact-me">
 					<span>Contact Me</span>
 					<span>
@@ -71,16 +76,24 @@ const Contact = () => {
 						<label htmlFor="message" name="message">
 							Message
 						</label>
-						<textarea type="text" name="message" id="message" placeholder="Enter your message" />
+						<textarea
+							type="text"
+							name="message"
+							id="message"
+							placeholder="Enter your message"
+						/>
 					</div>
 					<div className="button-area">
-						<input type="submit" className="contact-button" value="submit" />
-						<button className="contact-button">Clear</button>
+						<input
+							type="submit"
+							className="contact-button"
+							value={`Send`}
+						/>
 					</div>
 				</form>
 			</div>
 		</div>
 	);
 };
-
-export default Contact;
+const forwardContact = forwardRef(Contact)
+export default forwardContact;

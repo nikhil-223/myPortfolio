@@ -98,7 +98,7 @@ input[name='name'],input[name='email'] {
 }
 .contact-links {
 	position: relative;
-	top: 10rem;
+	margin-top: 1rem;
 	gap: 1rem;
 	height: 5rem;
 	display: flex;
@@ -108,7 +108,9 @@ input[name='name'],input[name='email'] {
 .button-area{
 	margin-top: 2rem;
 }
-
+.contactOnPlace{
+	left: 1rem;
+}
 @media only screen and (max-width: 950px) {
 	.contact-box {
 		height: 60rem;
@@ -131,6 +133,7 @@ input[name='name'],input[name='email'] {
 	}
 	.contact-links {
 		top: 0rem;
+		margin-top: 0;
 		height: auto;
 	}
 }

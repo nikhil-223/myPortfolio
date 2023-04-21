@@ -7,7 +7,7 @@ import { HiMail } from "react-icons/hi";
 import profilePic from "../../images/profile.jpg";
 
 const Navbar = (props) => {
-	const { visible } = props;
+	const { aboutVisible } = props;
 
 	// fill icon for menu mobile
 	const fillIcon =(e) => { 
@@ -15,7 +15,7 @@ const Navbar = (props) => {
 		anchors.map((item) => {
 			return item.style.color='black';
 		 })
-		e.target.closest("a").style.color='red'
+		e.target.closest("a").style.color = "rgb(225, 88, 88)";
 				
 	 }
 
@@ -39,7 +39,7 @@ const Navbar = (props) => {
 
 	return (
 		<>
-			<nav className={`navbar ${visible ? "bg-white" : "bg-normal"}`}>
+			<nav className={`navbar ${aboutVisible ? "bg-white" : "bg-normal"}`}>
 				<div className="logo">
 					<img src={profilePic} alt="profile" />
 				</div>
@@ -70,7 +70,10 @@ const Navbar = (props) => {
 				</ul>
 				<ul className="menu menu-phone">
 					<li className="menu_item">
-						<a href="#home" style={{color:'red'}} onClick={fillIcon}>
+						<a
+							href="#home"
+							style={{ color: "rgb(225, 88, 88)" }}
+							onClick={fillIcon}>
 							<AiFillHome />
 						</a>
 					</li>

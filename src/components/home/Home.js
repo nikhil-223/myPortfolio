@@ -3,7 +3,7 @@ import './Home.scss'
 import { ImLinkedin, ImGithub, ImTwitter } from "react-icons/im";
 
 const Home = (props,ref) => {
-	const {visible}=props;
+	const {textVisible,aboutVisible}=props;
   return (
 		<section id="home" className="home" ref={ref}>
 			<div className="home-container">
@@ -33,9 +33,10 @@ const Home = (props,ref) => {
 						</a>
 					</div>
 				</div>
-				<div className={`profile-info ${visible ? "visibletext" : "hidden"}`}>
+				<div
+					className={`profile-info ${textVisible ? "visible" : "hidden"}`}>
 					<div>
-						<span>Hey, I'm Nikhil Shekhawat</span>
+						<span> <h6>Hey, I'm </h6> <h3>Nikhil Shekhawat</h3> </span>
 					</div>
 					<div>
 						<span>Full-Stack</span>
@@ -50,7 +51,7 @@ const Home = (props,ref) => {
 					<div className="project-button">
 						<a href="#projects">Projects</a>
 					</div>
-					<div className="scroll-indicator">
+					<div className={`scroll-indicator ${aboutVisible? 'hideScroll':'visibleScroll' } `}>
 						<div className="scroll-inner"></div>
 					</div>
 				</div>

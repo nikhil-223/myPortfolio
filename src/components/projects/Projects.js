@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import crypto from "../../images/crypto.png";
+import crypto from "../../images/crypto.jpg";
 import portfolio from "../../images/Portfolio.png";
 import Project from "./Project";
 
