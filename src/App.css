@@ -27,10 +27,16 @@ body{
     background: var(--bg-color1);
     font-family: 'Roboto', sans-serif;
 }
+*{
+    user-select: none;
+}
 a{
     list-style: none;
     text-decoration: none;
     color: unset;
+}
+a:visited{
+    background-color: none;
 }
 
 @media only screen and (max-width: 950px) {

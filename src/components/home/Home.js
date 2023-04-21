@@ -58,6 +58,9 @@ const Home = (props,ref) => {
 					<div className="project-button">
 						<a href="#projects">Projects</a>
 					</div>
+					<div className="scroll-indicator">
+						<div className="scroll-inner"></div>
+					</div>
 				</div>
 			</div>
 		</section>

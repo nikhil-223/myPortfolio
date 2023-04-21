@@ -19,6 +19,7 @@
 	cursor: context-menu;
 }
 .menu {
+	position: relative;
 	height: auto;
 	display: flex;
 	align-items: center;
@@ -26,6 +27,13 @@
 	margin-right: 2rem;
 	gap: 1.5rem;
 	transition: all 0.5s;
+}
+.menu-phone{
+	display: none;
+}
+.menu-phone a{
+	display: flex;
+	align-items: center;
 }
 .menu_item {
 	text-decoration: none;
@@ -103,16 +111,22 @@
 	.navbar{
 		font-size: 1.8rem;
 	}
-	.menu{
-		position: absolute;
-		top: 0;
-		left: 100%;
+	.menu-pc{
+		display: none;
+	}
+	.menu-phone{
+		display: flex;
+		position: fixed;
+		bottom: 1.5rem;
+		left: 50%;
+		border-radius: 2rem;
+		gap: 3rem;
+		margin-right: 0;
+		transform: translate(-50%);
+		padding: 1.5rem;
 		background-color: #fafafa;
-		flex-direction: column;
-		padding-top: 70%;
-		width: 100%;
-		height: 100vh;
 		font-size: 2.5rem;
+		box-shadow: 0.1rem 0.3rem 2rem -1rem black;
 	}
 	.hamburger{
 		display: block;

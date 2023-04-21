@@ -1,27 +1,26 @@
 import React from "react";
 import "./Navbar.css";
+import {AiFillHome} from 'react-icons/ai'
+import { BsFillPersonFill } from "react-icons/bs";
+import { RiLightbulbFill } from "react-icons/ri";
+import { HiMail } from "react-icons/hi";
 import profilePic from "../../images/profile.jpg";
-import { FiMenu } from "react-icons/fi";
-import { MdClose } from "react-icons/md";
-import { useState } from "react";
 
 const Navbar = (props) => {
 	const { visible } = props;
-	const [menuVisible, setmenuVisible] = useState(false);
 
-	const showMenu = (e) => {
-		if (menuVisible) {
-			document.querySelector(".menu").style.left = "100%";
-			document.body.style.overflow = "scroll";
-			setmenuVisible(false);
-		} else {
-			document.querySelector(".menu").style.left = "0";
-			document.body.style.overflow = "hidden";
-			setmenuVisible(true);
-		}
-	};
+	// fill icon for menu mobile
+	const fillIcon =(e) => { 
+		let anchors= Array.from(document.querySelector('.menu-phone').querySelectorAll('a'))
+		anchors.map((item) => {
+			return item.style.color='black';
+		 })
+		e.target.closest("a").style.color='red'
+				
+	 }
+
+	//colorset for menu pc
 	const colorset = (e) => {
-		showMenu();
 		document
 			.querySelector('[href="#home"]')
 			.classList.remove("nav-item-active");
@@ -45,9 +44,9 @@ const Navbar = (props) => {
 					<img src={profilePic} alt="profile" />
 				</div>
 				<div>
-					<span>NIKHIL SHEKHAWAT</span> 
+					<span>NIKHIL SHEKHAWAT</span>
 				</div>
-				<ul className="menu" style={{ left: "100%" }}>
+				<ul className="menu menu-pc">
 					<li className="menu_item">
 						<a href="#home" className="nav-item-active" onClick={colorset}>
 							HOME
@@ -69,9 +68,28 @@ const Navbar = (props) => {
 						</a>
 					</li>
 				</ul>
-				<div className="hamburger" onClick={showMenu}>
-					{menuVisible ? <MdClose /> : <FiMenu />}
-				</div>
+				<ul className="menu menu-phone">
+					<li className="menu_item">
+						<a href="#home" style={{color:'red'}} onClick={fillIcon}>
+							<AiFillHome />
+						</a>
+					</li>
+					<li className="menu_item">
+						<a href="#about" onClick={fillIcon}>
+							<BsFillPersonFill />
+						</a>
+					</li>
+					<li className="menu_item">
+						<a href="#projects" onClick={fillIcon}>
+							<RiLightbulbFill />
+						</a>
+					</li>
+					<li className="menu_item">
+						<a href="#contact" onClick={fillIcon}>
+							<HiMail />
+						</a>
+					</li>
+				</ul>
 			</nav>
 			<div className="linecontainer">
 				<svg

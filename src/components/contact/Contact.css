@@ -69,6 +69,7 @@ input[name='name'],input[name='email'] {
 	border: none;
 }
 .contact-form div textarea {
+	font-family: 'Roboto';
 	height: 9rem;
 	max-height: 9rem;
 	outline: none;
@@ -98,7 +99,7 @@ input[name='name'],input[name='email'] {
 .contact-links {
 	position: relative;
 	top: 10rem;
-	gap: 2rem;
+	gap: 1rem;
 	height: 5rem;
 	display: flex;
 	justify-content: flex-start;
@@ -114,7 +115,7 @@ input[name='name'],input[name='email'] {
 		flex-direction: column;
 	}
 	.contact-me {
-		width: 90%;
+		width: 93%;
 		margin: 2rem auto;
 		height: auto;
 		padding: 2rem 3rem;
