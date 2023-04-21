@@ -14,7 +14,7 @@ const Projects = () => {
 		{
 			projectName: "Portfolio",
 			imgURL: portfolio,
-			projectURL: "https://crypto-currency-board.netlify.app/",
+			projectURL: "https://nikhilshekhawat.netlify.app/",
 		},
 	];
 	return (
