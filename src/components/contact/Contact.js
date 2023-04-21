@@ -7,11 +7,6 @@ const Contact = (props, ref) => {
 
 	const form = useRef();
 	const sendEmail = (e) => {
-		if (
-			document.getElementById("name").value !== "" &&
-			document.getElementById("email").value !== "" &&
-			document.getElementById("message").value !== ""
-		) {
 			e.preventDefault();
 
 			emailjs
@@ -30,7 +25,7 @@ const Contact = (props, ref) => {
 					}
 				);
 			e.target.reset();
-		}
+		
 	};
 	return (
 		<div id="contact">
@@ -60,12 +55,13 @@ const Contact = (props, ref) => {
 				</div>
 				<form ref={form} onSubmit={sendEmail} className="contact-form">
 					<div>
-						<label htmlFor="name">Name</label>
+						<label htmlFor="name" >Name</label>
 						<input
 							type="text"
 							name="name"
 							id="name"
 							placeholder="Enter your name"
+							required
 						/>
 					</div>
 					<div>
@@ -75,6 +71,7 @@ const Contact = (props, ref) => {
 							name="email"
 							id="email"
 							placeholder="Enter your e-mail"
+							required
 						/>
 					</div>
 					<div>
@@ -86,6 +83,7 @@ const Contact = (props, ref) => {
 							name="message"
 							id="message"
 							placeholder="Enter your message"
+							required
 						/>
 					</div>
 					<div className="button-area">
