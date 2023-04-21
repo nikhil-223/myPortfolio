@@ -1,30 +1,36 @@
-import React, { useRef ,forwardRef} from "react";
+import React, { useRef, forwardRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
-const Contact = (props,ref) => {
-	const {contactVisible}=props;
+const Contact = (props, ref) => {
+	const { contactVisible } = props;
 
 	const form = useRef();
 	const sendEmail = (e) => {
-		e.preventDefault();
+		if (
+			document.getElementById("name").value !== "" &&
+			document.getElementById("email").value !== "" &&
+			document.getElementById("message").value !== ""
+		) {
+			e.preventDefault();
 
-		emailjs
-			.sendForm(
-				"service_abvcqef",
-				"template_536kggf",
-				form.current,
-				"P7SvBkRpJIRazMOZN"
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
+			emailjs
+				.sendForm(
+					"service_abvcqef",
+					"template_536kggf",
+					form.current,
+					"P7SvBkRpJIRazMOZN"
+				)
+				.then(
+					(result) => {
+						console.log(result.text);
+					},
+					(error) => {
+						console.log(error.text);
+					}
+				);
 			e.target.reset();
+		}
 	};
 	return (
 		<div id="contact">
@@ -83,16 +89,12 @@ const Contact = (props,ref) => {
 						/>
 					</div>
 					<div className="button-area">
-						<input
-							type="submit"
-							className="contact-button"
-							value={`Send`}
-						/>
+						<input type="submit" className="contact-button" value={`Send`} />
 					</div>
 				</form>
 			</div>
 		</div>
 	);
 };
-const forwardContact = forwardRef(Contact)
+const forwardContact = forwardRef(Contact);
 export default forwardContact;
