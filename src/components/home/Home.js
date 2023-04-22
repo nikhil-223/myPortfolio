@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react'
 import './Home.scss'
+import HomeIllustration from "../../images/Home.svg";
 import { ImLinkedin, ImGithub, ImTwitter } from "react-icons/im";
 
 const Home = (props,ref) => {
@@ -33,10 +34,12 @@ const Home = (props,ref) => {
 						</a>
 					</div>
 				</div>
-				<div
-					className={`profile-info ${textVisible ? "visible" : "hidden"}`}>
+				<div className={`profile-info ${textVisible ? "visible" : "hidden"}`}>
 					<div>
-						<span> <h6>Hey, I'm </h6> <h3>Nikhil Shekhawat</h3> </span>
+						<span>
+							{" "}
+							<h6>Hey, I'm </h6> <h3>Nikhil Shekhawat</h3>{" "}
+						</span>
 					</div>
 					<div>
 						<span>Full-Stack</span>
@@ -51,8 +54,14 @@ const Home = (props,ref) => {
 					<div className="project-button">
 						<a href="#projects">Projects</a>
 					</div>
-					<div className={`scroll-indicator ${aboutVisible? 'hideScroll':'visibleScroll' } `}>
+					<div
+						className={`scroll-indicator ${
+							aboutVisible ? "hideScroll" : "visibleScroll"
+						} `}>
 						<div className="scroll-inner"></div>
+					</div>
+					<div className="home-illustration">
+						<img src={HomeIllustration} alt="home" />
 					</div>
 				</div>
 			</div>

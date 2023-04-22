@@ -21,7 +21,6 @@ const Projects = () => {
 		<section id="projects">
 			<div className="projects-header">
 				<span>PROJECTS</span>
-				
 			</div>
 			<div className="project-list">
 				{projects.map((item) => {
@@ -35,6 +34,7 @@ const Projects = () => {
 					);
 				})}
 			</div>
+			
 		</section>
 	);
 };

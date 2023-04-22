@@ -161,6 +161,19 @@
 		opacity: 0;
 	}
 }
+.home-illustration {
+	position: absolute;
+	bottom: 0rem;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+.home-illustration img {
+	width: 30rem;
+	height: 30rem;
+	transform: scaleX(-1);
+	margin-right: 2rem;
+}
 
 @media only screen and (max-width: 950px) {
 	.links {
@@ -185,5 +198,11 @@
 	}
 	.profile-info div:nth-child(1) span h3 {
 		font-size: 4.5rem;
+	}
+	.home-illustration {
+		bottom: 1rem;
+	}
+	.home-illustration img {
+		margin-right: 2rem;
 	}
 }
