@@ -150,6 +150,19 @@
 .hideScroll {
 	opacity: 0;
 }
+.visibleRight{
+	animation: fadedr 1s;
+}
+@keyframes fadedr {
+	0% {
+		opacity: 0;
+		transform: translate(30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0%);
+	}
+}
 
 @keyframes scrollDown {
 	0% {

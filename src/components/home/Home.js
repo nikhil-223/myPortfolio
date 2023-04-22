@@ -1,14 +1,14 @@
-import React, { forwardRef } from 'react'
-import './Home.scss'
+import React, { forwardRef } from "react";
+import "./Home.scss";
 import HomeIllustration from "../../images/Home.svg";
 import { ImLinkedin, ImGithub, ImTwitter } from "react-icons/im";
 
-const Home = (props,ref) => {
-	const {textVisible,aboutVisible}=props;
-  return (
+const Home = (props, ref) => {
+	const { textVisible, aboutVisible } = props;
+	return (
 		<section id="home" className="home" ref={ref}>
 			<div className="home-container">
-				<div className="links">
+				<div className={`links ${textVisible ? "visible" : "hidden"}`}>
 					<div className="link-box">
 						<a
 							href="https://www.linkedin.com/in/nikhil-shekhawat-986385179"
@@ -54,19 +54,22 @@ const Home = (props,ref) => {
 					<div className="project-button">
 						<a href="#projects">Projects</a>
 					</div>
-					<div
-						className={`scroll-indicator ${
-							aboutVisible ? "hideScroll" : "visibleScroll"
-						} `}>
-						<div className="scroll-inner"></div>
-					</div>
-					<div className="home-illustration">
-						<img src={HomeIllustration} alt="home" />
-					</div>
+				</div>
+				<div
+					className={`scroll-indicator ${
+						aboutVisible ? "hideScroll" : "visibleScroll"
+					} `}>
+					<div className="scroll-inner"></div>
+				</div>
+				<div
+					className={`home-illustration ${
+						textVisible ? "visibleRight" : "hidden"
+					}`}>
+					<img src={HomeIllustration} alt="home" />
 				</div>
 			</div>
 		</section>
 	);
-}
-const forwardHome = forwardRef(Home)
+};
+const forwardHome = forwardRef(Home);
 export default forwardHome;
