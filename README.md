@@ -1,10 +1,10 @@
-#### My Portfolio
+# My Portfolio
 This is my portfolio website, which showcases my projects, skills, and experience in web development. The website is built using React.js and features a modern and professional design.
 
-## Demo
+### Demo
 https://nikhilshekhawat.netlify.app/ 
 
-### Features
+## Features
 Responsive design for seamless experience across all devices
 Project showcase with descriptions and links
 Skills section to highlight areas of expertise
@@ -32,7 +32,7 @@ Copy code
 npm start
 Usage
 
-# Visit the deployed website to interact with the portfolio and learn more about my skills, experience, and projects.
+#### Visit the deployed website to interact with the portfolio and learn more about my skills, experience, and projects.
 
 ## Contributing
 Contributions are always welcome! If you notice any issues or have any suggestions for how to improve the portfolio, please feel free to open an issue or submit a pull request.
