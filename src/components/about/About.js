@@ -39,16 +39,16 @@ const About = (props, ref) => {
 						<div className="about-gtkm-title">Get to know me!</div>
 						<div className="about-gtkm-content">
 							As a  passionate <b>Full-stack Web Developer</b> I'm dedicated to creating
-							innovative and user-friendly web applications. <br /> With my expertise
+							innovative and user-friendly web applications. <br /> <br /> With my expertise
 							in <b>React</b> , I've built several major projects that have been widely
 							praised for their intuitive design and seamless functionality. I'm
 							constantly expanding my knowledge and skills, and I'm excited to
-							take on new challenges and learn new technologies. <br /> My goal is to
+							take on new challenges and learn new technologies. <br /> <br /> My goal is to
 							become a well-rounded developer who can bring a wide range of
 							expertise to any project. In addition to my technical skills, I'm
 							a strong communicator and collaborator who thrives in a team
 							environment. I believe that the best results come from working
-							together and bringing diverse perspectives to the table. <br /> If you're
+							together and bringing diverse perspectives to the table. <br /> <br /> If you're
 							looking for a creative and driven developer who can deliver
 							high-quality solutions, I'd love to connect and explore how I can
 							contribute to your team or project.
