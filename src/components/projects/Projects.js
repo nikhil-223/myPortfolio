@@ -16,6 +16,11 @@ const Projects = () => {
 			imgURL: portfolio,
 			projectURL: "https://nikhilshekhawat.netlify.app/",
 		},
+		{
+			projectName: "My Notepad",
+			imgURL: portfolio,
+			projectURL: "https://inotepad.netlify.app/",
+		},
 	];
 	return (
 		<section id="projects">

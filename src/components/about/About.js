@@ -64,13 +64,13 @@ const About = (props, ref) => {
 						</div>
 					</div>
 				</div>
-				<div className={`about-illustration`} ref={ref}>
-					<img
-						className={`${aboutIllVisible? 'aboutIllVisible':'hide'}`}
-						src={AboutIllustration}
-						alt="home"
-					/>
-				</div>
+			</div>
+			<div className={`about-illustration`} ref={ref}>
+				<img
+					className={`${aboutIllVisible ? "aboutIllVisible" : "hide"}`}
+					src={AboutIllustration}
+					alt="home"
+				/>
 			</div>
 		</section>
 	);

@@ -16,7 +16,7 @@
 	align-self: flex-start;
 	width: 35rem;
 	min-width: 15rem;
-    font-size: 3rem;
+	font-size: 3rem;
 	font-weight: 600;
 	background-color: var(--bg-contact-color10);
 	border-radius: 0 1rem 1rem 0;
@@ -25,7 +25,7 @@
 	justify-content: flex-end;
 	z-index: 3;
 }
-.about-content{
+.about-content {
 	padding: 4rem 8rem 0 8rem;
 	display: flex;
 }
@@ -57,7 +57,7 @@
 	width: 13rem;
 	background-color: var(--bg-button);
 	padding: 0.8rem;
-    font-weight: 600;
+	font-weight: 600;
 	border-radius: 0.4rem;
 	text-align: center;
 }
@@ -86,39 +86,34 @@
 	font-size: 1.5rem;
 	border-radius: 0.4rem;
 }
-.about-illustration{
+.about-illustration {
 	position: absolute;
+	height: fit-content;
 	right: 0;
-	height: auto;
-	transform: translateY(30%);
+	transform: translateY(-75%);
 	z-index: 2;
 }
-.about-illustration img{
+.about-illustration img {
 	width: 40rem;
 	height: 40rem;
 	transform: translate(-10%);
 }
-.aboutIllVisible{
+.aboutIllVisible {
 	animation: aboutVisible 1s;
 }
 
 @keyframes aboutVisible {
-	0%{
+	0% {
 		transform: translate(-100%);
-		
 	}
-	100%{
+	100% {
 		transform: translate(-10%);
-
 	}
-	
 }
-
-
 
 @media only screen and (max-width: 950px) {
 	#about {
-		padding:10rem 0;
+		padding: 10rem 0;
 	}
 	.about-container {
 		grid-template-columns: 100%;
@@ -126,17 +121,17 @@
 		column-gap: 2rem;
 		gap: 0;
 	}
-	.about-content{
+	.about-content {
 		flex-direction: column;
 		padding: 4rem 2rem;
 	}
-	.about-skills{
+	.about-skills {
 		margin-top: 5rem;
 	}
-	.about-header{
+	.about-header {
 		width: 28rem;
 	}
-	.about-illustration{
-	transform: translateY(100%);
-}
+	.about-illustration {
+		/* bottom: 0; */
+	}
 }
