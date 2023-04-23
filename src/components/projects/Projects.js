@@ -2,23 +2,27 @@ import React from "react";
 import "./Projects.css";
 import crypto from "../../images/crypto.jpg";
 import portfolio from "../../images/Portfolio.png";
+import inotepad from "../../images/inotepad.png";
 import Project from "./Project";
 
 const Projects = () => {
 	const projects = [
 		{
 			projectName: "CryptoCurrency",
+			description: "",
 			imgURL: crypto,
 			projectURL: "https://crypto-currency-board.netlify.app/",
 		},
 		{
 			projectName: "Portfolio",
+			description: "",
 			imgURL: portfolio,
 			projectURL: "https://nikhilshekhawat.netlify.app/",
 		},
 		{
 			projectName: "My Notepad",
-			imgURL: portfolio,
+			description: "In progress",
+			imgURL: inotepad,
 			projectURL: "https://inotepad.netlify.app/",
 		},
 	];
@@ -35,11 +39,11 @@ const Projects = () => {
 							projectName={item.projectName}
 							imgURL={item.imgURL}
 							projectURL={item.projectURL}
+							projectDesc={item.description}
 						/>
 					);
 				})}
 			</div>
-			
 		</section>
 	);
 };

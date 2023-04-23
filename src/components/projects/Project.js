@@ -3,7 +3,7 @@ import { HiExternalLink } from "react-icons/hi";
 import { FaReadme } from "react-icons/fa";
 
 const Project = (props) => {
-	const { projectName, imgURL, projectURL } = props;
+	const { projectName, imgURL, projectURL,projectDesc } = props;
 	return (
 		<div className={`project ${projectName}`}>
 			<a href={projectURL} target="blank">
@@ -11,7 +11,7 @@ const Project = (props) => {
 			</a>
 			
 			<div className="project-details">
-				<span>{projectName}</span>
+				<div className="project-nameDesc"><span>{projectName}</span><span className="projectDesc">{projectDesc}</span></div>
 				<div className="project-read-more">
 					<a href={projectURL} target="blank">
 						<HiExternalLink />
