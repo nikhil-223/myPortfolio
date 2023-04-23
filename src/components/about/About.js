@@ -1,8 +1,10 @@
 import React from "react";
 import "./About.css";
 import Skill from "./Skill";
+import AboutIllustration from "../../images/Blooming-pana1.svg";
 
 const About = (props, ref) => {
+	const { aboutIllVisible } = props;
 	const skills = [
 		"HTML5",
 		"React.js",
@@ -31,9 +33,7 @@ const About = (props, ref) => {
 	return (
 		<section id="about">
 			<div className="about-container">
-				<div className="about-header">
-					ABOUT ME
-				</div>
+				<div className="about-header">ABOUT ME</div>
 				<div className="about-content">
 					<div className="about-gtkm">
 						<div className="about-gtkm-title">Get to know me!</div>
@@ -63,6 +63,13 @@ const About = (props, ref) => {
 							})}
 						</div>
 					</div>
+				</div>
+				<div
+					className={`about-illustration ${
+						aboutIllVisible ? "aboutVisibleRight" : "hidden"
+					}`}
+					ref={ref}>
+					<img src={AboutIllustration} alt="about-illustration" />
 				</div>
 			</div>
 		</section>

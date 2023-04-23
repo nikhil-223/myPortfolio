@@ -1,17 +1,20 @@
 import React from "react";
-import { BsFillPlayFill } from "react-icons/bs";
+import { HiExternalLink } from "react-icons/hi";
 import { FaReadme } from "react-icons/fa";
 
 const Project = (props) => {
 	const { projectName, imgURL, projectURL } = props;
 	return (
 		<div className={`project ${projectName}`}>
-			<img src={imgURL} alt={projectName} />
+			<a href={projectURL} target="blank">
+				<img src={imgURL} alt={projectName} />
+			</a>
+			
 			<div className="project-details">
 				<span>{projectName}</span>
 				<div className="project-read-more">
 					<a href={projectURL} target="blank">
-						<BsFillPlayFill />
+						<HiExternalLink />
 					</a>
 					<a href={projectURL}>
 						<FaReadme />

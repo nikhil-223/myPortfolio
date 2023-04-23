@@ -1,9 +1,11 @@
 #about {
+	width: 100%;
 	background-color: #fafafa;
 	height: auto;
-	padding: 8rem 0rem 8rem 0;
+	padding: 8rem 0rem 4rem 0;
 }
 .about-container {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	height: 80%;
@@ -77,12 +79,40 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1.5rem;
+	z-index: 4;
 }
 .skill {
 	padding: 1rem;
 	background-color: rgb(247, 187, 187);
 	font-size: 1.5rem;
 	border-radius: 0.4rem;
+}
+.about-illustration{
+	position: absolute;
+	display: flex; 
+	justify-content: flex-end;
+	transform: translateY(20%);
+	width: 100%;
+}
+.about-illustration img {
+	width: 50rem;
+	height: 50rem;
+	margin-right: 2rem;
+}
+
+.aboutVisibleRight{
+	animation: aboutVisible 1s ease-out ;
+}
+
+@keyframes aboutVisible {
+	0% {
+		opacity: 0;
+		right: -25rem;
+	}
+	100% {
+		opacity: 1;
+		right: 0rem;
+	}
 }
 
 @media only screen and (max-width: 950px) {
@@ -104,5 +134,11 @@
 	}
 	.about-header{
 		width: 28rem;
+	}
+	.about-illustration{
+	transform: translateY(60%);
+}
+	.about-illustration img {
+		margin-right: 2rem;
 	}
 }

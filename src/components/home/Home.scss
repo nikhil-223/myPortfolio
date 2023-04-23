@@ -151,7 +151,7 @@
 	opacity: 0;
 }
 .visibleRight{
-	animation: fadedr 1s;
+	animation: fadedr 1s linear;
 }
 @keyframes fadedr {
 	0% {

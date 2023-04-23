@@ -4,6 +4,7 @@ import {Navbar,About, Home, Projects, Contact, Alert, Footer} from './components
 import { useInView } from 'react-intersection-observer'
 const App = () => {
   const {ref:homeref, inView:isvisible}= useInView();
+  const {ref:aboutIllRef, inView:aboutIllVisible}= useInView();
   const { ref: navbarref, inView:down} = useInView();
   const { ref: contactref, inView:contactVisible} = useInView();
   return (
@@ -12,7 +13,7 @@ const App = () => {
 			<Alert />
 			<Home ref={homeref} textVisible={isvisible} aboutVisible={down} />
 			<div ref={navbarref}>
-				<About />
+				<About ref={aboutIllRef} aboutIllVisible={aboutIllVisible}/>
 				<Projects />
 				<Contact ref={contactref} contactVisible={contactVisible} />
 				<Footer />
