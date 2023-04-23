@@ -38,18 +38,20 @@ const About = (props, ref) => {
 					<div className="about-gtkm">
 						<div className="about-gtkm-title">Get to know me!</div>
 						<div className="about-gtkm-content">
-							I'm a <b>Frontend Web Developer</b> building the Front-end of
-							Websites and Web Applications that leads to the success of the
-							overall product. Check out some of my work in the <b> Projects</b>{" "}
-							section. <br /> <br /> I also like sharing content related to the
-							stuff that I have learned over the years in{" "}
-							<b> Web Development</b> so it can help other people of the Dev
-							Community. Feel free to Connect or Follow me on my Linkedin where
-							I post useful content related to Web Development and Programming.{" "}
-							<br /> <br /> I'm open to <b>Job</b> opportunities where I can
-							contribute, learn and grow. If you have a good opportunity that
-							matches my skills and experience then don't hesitate to{" "}
-							<b>contact</b> me.
+							As a passionate full-stack developer <br /> I'm dedicated to creating
+							innovative and user-friendly web applications. <br /> With my expertise
+							in React, I've built several major projects that have been widely
+							praised for their intuitive design and seamless functionality. I'm
+							constantly expanding my knowledge and skills, and I'm excited to
+							take on new challenges and learn new technologies. <br /> My goal is to
+							become a well-rounded developer who can bring a wide range of
+							expertise to any project. In addition to my technical skills, I'm
+							a strong communicator and collaborator who thrives in a team
+							environment. I believe that the best results come from working
+							together and bringing diverse perspectives to the table. <br /> If you're
+							looking for a creative and driven developer who can deliver
+							high-quality solutions, I'd love to connect and explore how I can
+							contribute to your team or project.
 						</div>
 						<div className="about-gtkm-contact">
 							<a href="#contact">Contact Me</a>
