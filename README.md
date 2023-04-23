@@ -22,7 +22,7 @@ react-intersection-observer library
 Clone the repository to your local machine:
 bash
 Copy code
-git clone https://github.com/your-username/my-portfolio.git
+git clone https://github.com/nikhil-223/myPortfolio.git
 Install dependencies:
 Copy code
 npm install
