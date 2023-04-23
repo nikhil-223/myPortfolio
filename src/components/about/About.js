@@ -38,9 +38,9 @@ const About = (props, ref) => {
 					<div className="about-gtkm">
 						<div className="about-gtkm-title">Get to know me!</div>
 						<div className="about-gtkm-content">
-							As a passionate full-stack developer <br /> I'm dedicated to creating
+							As a  passionate <b>Full-stack Web Developer</b> I'm dedicated to creating
 							innovative and user-friendly web applications. <br /> With my expertise
-							in React, I've built several major projects that have been widely
+							in <b>React</b> , I've built several major projects that have been widely
 							praised for their intuitive design and seamless functionality. I'm
 							constantly expanding my knowledge and skills, and I'm excited to
 							take on new challenges and learn new technologies. <br /> My goal is to
