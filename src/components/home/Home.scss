@@ -29,6 +29,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 4;
 }
 
 .profile-info div:nth-child(1) span {
@@ -181,6 +182,7 @@
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
+	z-index: 2;
 }
 .home-illustration img {
 	width: 30rem;
