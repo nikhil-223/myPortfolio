@@ -16,9 +16,9 @@ const Project = (props) => {
 					<a href={projectURL} target="blank">
 						<HiExternalLink />
 					</a>
-					<a href={projectURL}>
+					{/* <a href={projectURL}>
 						<FaReadme />
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</div>
