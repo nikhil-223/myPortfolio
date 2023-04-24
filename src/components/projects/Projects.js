@@ -8,21 +8,24 @@ import Project from "./Project";
 const Projects = () => {
 	const projects = [
 		{
-			projectName: "CryptoCurrency",
+			projectName: "Crypto Dashboard",
 			description: "",
 			imgURL: crypto,
+			github: "https://github.com/nikhil-223/cryptocurrency-project",
 			projectURL: "https://crypto-currency-board.netlify.app/",
 		},
 		{
 			projectName: "Portfolio",
 			description: "",
 			imgURL: portfolio,
+			github: "https://github.com/nikhil-223/myPortfolio",
 			projectURL: "https://nikhilshekhawat.netlify.app/",
 		},
 		{
 			projectName: "My Notepad",
 			description: "In progress",
 			imgURL: inotepad,
+			github: "https://github.com/nikhil-223/inotepad",
 			projectURL: "https://inotepad.netlify.app/",
 		},
 	];
@@ -40,6 +43,7 @@ const Projects = () => {
 							imgURL={item.imgURL}
 							projectURL={item.projectURL}
 							projectDesc={item.description}
+							github={item.github}
 						/>
 					);
 				})}
