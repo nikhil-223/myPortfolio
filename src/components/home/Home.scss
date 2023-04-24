@@ -56,7 +56,7 @@
 	justify-content: center;
 	text-align: center;
 	margin-top: 1rem;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	font-family: "Poppins", sans-serif;
 }
@@ -151,7 +151,7 @@
 .hideScroll {
 	opacity: 0;
 }
-.visibleRight{
+.visibleRight {
 	animation: fadedr 1s linear;
 }
 @keyframes fadedr {
@@ -190,7 +190,6 @@
 }
 
 @media only screen and (max-width: 950px) {
-	
 	.links {
 		display: none;
 	}
@@ -222,5 +221,8 @@
 	.home-illustration img {
 		margin-right: 2rem;
 	}
+	.profile-info div:nth-child(3) {
+		font-size: 1.3rem;
+	}
 }
-// 
+//

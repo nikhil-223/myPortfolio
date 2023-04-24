@@ -47,8 +47,8 @@ const Home = (props, ref) => {
 					</div>
 					<div>
 						<span>
-							I have worked on MERN stack and created various projects on
-							React-Redux{" "}
+							I specialize in creating dynamic and interactive websites utilizing
+							a range of programming languages and frameworks 
 						</span>
 					</div>
 					<div className="project-button">
