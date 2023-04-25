@@ -29,6 +29,23 @@ const Projects = () => {
 			projectURL: "https://inotepad.netlify.app/",
 		},
 	];
+
+	//intersection observer
+		const cards= document.querySelectorAll('.project')
+		const observer= new IntersectionObserver(entries =>{
+			entries.forEach((entry,index)=>{
+				entry.target.style.transitionDelay=`${index/10}s`
+				if(entry.isIntersecting)
+				entry.target.classList.add('visibleUp')
+			})
+		},{
+			threshold:0.1
+		})
+		console.log(3/8);
+		cards.forEach(card=>{
+			observer.observe(card)
+		})
+
 	return (
 		<section id="projects">
 			<div className="projects-header">

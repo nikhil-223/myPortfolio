@@ -5,6 +5,10 @@ import { ImLinkedin, ImGithub, ImTwitter } from "react-icons/im";
 
 const Home = (props, ref) => {
 	const { textVisible, aboutVisible } = props;
+	if(textVisible){
+		document.querySelector(".home-illustration").classList.add("visibleRight");
+		document.querySelector(".profile-info").classList.add("visible");
+	}
 	return (
 		<section id="home" className="home" ref={ref}>
 			<div className="home-container">
@@ -34,7 +38,7 @@ const Home = (props, ref) => {
 						</a>
 					</div>
 				</div>
-				<div className={`profile-info ${textVisible ? "visible" : "hidden"}`}>
+				<div className={`profile-info `}>
 					<div>
 						<span>
 							{" "}
@@ -62,9 +66,7 @@ const Home = (props, ref) => {
 					<div className="scroll-inner"></div>
 				</div>
 				<div
-					className={`home-illustration ${
-						textVisible ? "visibleRight" : "hidden"
-					}`}>
+					className={`home-illustration`}>
 					<img src={HomeIllustration} alt="home" />
 				</div>
 			</div>

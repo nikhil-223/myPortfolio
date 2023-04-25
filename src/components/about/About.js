@@ -5,6 +5,11 @@ import AboutIllustration from "../../images/Blooming-pana1.svg";
 
 const About = (props, ref) => {
 	const { aboutIllVisible } = props;
+	if (aboutIllVisible) {
+		document
+			.querySelector(".about-illustration")
+			.classList.add("aboutIllVisible");
+	}
 	const skills = [
 		"HTML5",
 		"React.js",

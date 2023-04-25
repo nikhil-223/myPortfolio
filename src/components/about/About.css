@@ -90,8 +90,9 @@
 	position: absolute;
 	height: fit-content;
 	right: 0;
-	transform: translateY(-75%);
 	z-index: 2;
+	transform: translate(-45%,-38%);
+	transition: all 1s;
 }
 .about-illustration img {
 	width: 40rem;
@@ -99,16 +100,7 @@
 	margin-right: 4rem;
 }
 .aboutIllVisible {
-	animation: aboutVisible 1s;
-}
-
-@keyframes aboutVisible {
-	0% {
-		transform: translate(-100%);
-	}
-	100% {
-		transform: translate(0%);
-	}
+	transform: translate(0%,-38%);
 }
 
 @media only screen and (max-width: 950px) {

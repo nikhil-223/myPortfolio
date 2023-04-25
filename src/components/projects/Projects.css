@@ -28,6 +28,8 @@
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
+	transform: translatey(20%);
+	transition: all 0.7s;
 }
 .project-details{
 	height: 20%;
@@ -79,6 +81,9 @@ padding: 1rem 4rem;
 	justify-content: flex-end;
 }
 
+.visibleUp{
+	transform: translate(0);
+}
 
 
 
