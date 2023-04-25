@@ -27,10 +27,16 @@ const Contact = (props, ref) => {
 			e.target.reset();
 		
 	};
+
+	//intersection observe for contact-box
+	if (contactVisible) {
+		console.log(contactVisible);
+		document.querySelector(".contact-box").classList.add("visibleUp");
+	}
 	return (
 		<div id="contact">
 			<div
-				className={`contact-box ${contactVisible ? "visible" : "hidden"}`}
+				className={`contact-box `}
 				ref={ref}>
 				<div className="contact-me">
 					<span>Contact Me</span>

@@ -15,6 +15,8 @@
 	border-radius: 1.2rem;
 	display: flex;
 	flex-direction: row;
+	transform: translatey(20%);
+	transition: all 0.5s;
 }
 .contact-me {
 	width: 35%;
@@ -108,8 +110,10 @@ input[name='name'],input[name='email'] {
 .button-area{
 	margin-top: 2rem;
 }
-.contactOnPlace{
-	left: 1rem;
+
+
+.visibleUp{
+	transform: translate(0);
 }
 @media only screen and (max-width: 950px) {
 	.contact-box {
