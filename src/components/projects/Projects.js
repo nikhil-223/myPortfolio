@@ -41,7 +41,6 @@ const Projects = () => {
 		},{
 			threshold:0.1
 		})
-		console.log(3/8);
 		cards.forEach(card=>{
 			observer.observe(card)
 		})
