@@ -3,6 +3,7 @@ import "./Projects.css";
 import crypto from "../../images/crypto.jpg";
 import portfolio from "../../images/Portfolio.png";
 import inotepad from "../../images/inotepad.png";
+import chatApp from "../../images/chatApp.png";
 import Project from "./Project";
 
 const Projects = () => {
@@ -12,21 +13,28 @@ const Projects = () => {
 			description: "",
 			imgURL: crypto,
 			github: "https://github.com/nikhil-223/cryptocurrency-project",
-			projectURL: "https://crypto-currency-board.netlify.app/",
+			projectURL: "https://crypto-currency-board.netlify.app",
 		},
 		{
-			projectName: "Portfolio",
-			description: "",
-			imgURL: portfolio,
-			github: "https://github.com/nikhil-223/myPortfolio",
-			projectURL: "https://nikhilshekhawat.netlify.app/",
+			projectName: "Chatting App",
+			description: "In progress",
+			imgURL: chatApp,
+			github: "https://github.com/nikhil-223/chatting-app",
+			projectURL: "https://chatttingapp.netlify.app",
 		},
 		{
 			projectName: "My Notepad",
 			description: "In progress",
 			imgURL: inotepad,
 			github: "https://github.com/nikhil-223/inotepad",
-			projectURL: "https://inotepad.netlify.app/",
+			projectURL: "https://inotepad.netlify.app",
+		},
+		{
+			projectName: "Portfolio",
+			description: "",
+			imgURL: portfolio,
+			github: "https://github.com/nikhil-223/myPortfolio",
+			projectURL: "https://nikhilshekhawat.netlify.app",
 		},
 	];
 
