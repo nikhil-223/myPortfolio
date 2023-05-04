@@ -31,6 +31,10 @@
 	transform: translatey(20%);
 	transition: all 0.7s;
 }
+
+.project:hover{
+	transform: scale(1.02);
+}
 .project-details{
 	height: 20%;
 	display: flex;
