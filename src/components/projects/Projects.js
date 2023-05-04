@@ -4,6 +4,7 @@ import crypto from "../../images/crypto.jpg";
 import portfolio from "../../images/Portfolio.png";
 import inotepad from "../../images/inotepad.png";
 import chatApp from "../../images/chatApp.png";
+import cssChallenges from "../../images/cssChallenges.png";
 import Project from "./Project";
 
 const Projects = () => {
@@ -35,6 +36,13 @@ const Projects = () => {
 			imgURL: portfolio,
 			github: "https://github.com/nikhil-223/myPortfolio",
 			projectURL: "https://nikhilshekhawat.netlify.app",
+		},
+		{
+			projectName: "CSS Challenges",
+			description: "",
+			imgURL: cssChallenges,
+			github: "https://github.com/nikhil-223/css-challenge-react",
+			projectURL: "https://css-challengesbynikhil.netlify.app/",
 		},
 	];
 
