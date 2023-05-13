@@ -4,21 +4,21 @@ This is my portfolio website, which showcases my projects, skills, and experienc
 ### Demo
 https://nikhilshekhawat.netlify.app/ 
 
-## Features
+## ⭐️⭐️⭐️ Features
 Responsive design for seamless experience across all devices
 Project showcase with descriptions and links
 Skills section to highlight areas of expertise
 Interactive contact form for easy communication with visitors
 About me section to provide additional context and background
 
-## Technologies Used
+## 💻 Technologies Used
 React.js
 CSS
 HTML
 JavaScript
 react-intersection-observer library
 
-## Getting Started
+## 🚀 Getting Started
 Clone the repository to your local machine:
 bash
 Copy code
