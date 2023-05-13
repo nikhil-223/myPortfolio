@@ -45,6 +45,13 @@ a:visited{
     background-color: none;
 }
 
+.id-buttons{
+    transition: all 0.3s;
+}
+.id-buttons:hover{
+    filter: contrast(130%);
+}
+
 @media only screen and (max-width: 950px) {
 	:root{
 		font-size: 10px;

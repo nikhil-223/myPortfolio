@@ -55,7 +55,7 @@ const Home = (props, ref) => {
 							a range of programming languages and frameworks 
 						</span>
 					</div>
-					<div className="project-button">
+					<div className="project-button id-buttons">
 						<a href="#projects">Projects</a>
 					</div>
 				</div>

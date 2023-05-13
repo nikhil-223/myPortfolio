@@ -62,7 +62,7 @@ const About = (props, ref) => {
 							high-quality solutions, I'd love to connect and explore how I can
 							contribute to your team or project.
 						</div>
-						<div className="about-gtkm-contact">
+						<div className="about-gtkm-contact  id-buttons">
 							<a href="#contact">Contact Me</a>
 						</div>
 					</div>

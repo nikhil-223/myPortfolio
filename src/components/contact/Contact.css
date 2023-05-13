@@ -85,7 +85,7 @@ input[name='name'],input[name='email'] {
 	width: 9rem;
 	height: 3rem;
 	border: none;
-	background: rgb(189, 211, 196);
+	background: #42c5abb8;
 	box-shadow: 1px 1px 3px 0.2px rgba(0, 0, 0, 0.33);
 	border-radius: 5px;
 	display: flex;
