@@ -3,13 +3,13 @@
 	min-height: 70rem;
 	background-color: #f1f1f1;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	gap: 5rem;
 	align-items: center;
-	padding:10rem 0rem 3rem 0rem;
+	padding: 10rem 0rem 3rem 0rem;
 }
 .project-list {
-    width: 100%;
+	width: 100%;
 	height: auto;
 	background-color: #f1f1f1;
 	display: flex;
@@ -25,7 +25,7 @@
 	height: 30rem;
 	box-shadow: 7px 9px 19px -5px rgba(138, 124, 124, 0.84);
 	border-radius: 1rem;
-    background-color: white;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
@@ -34,29 +34,29 @@
 	transition: all 0.4s;
 }
 
-.project:hover{
+.project:hover {
 	transform: scale(1.02);
 }
-.project-details{
+.project-details {
 	height: 20%;
 	display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+	align-items: flex-start;
+	gap: 1rem;
 	padding: 1.5rem;
 	font-size: 1.7rem;
 	font-weight: 600;
 }
-.project-nameDesc{
+.project-nameDesc {
 	display: flex;
 	flex-direction: column;
 }
 
-.aboutProject{
+.aboutProject {
 	margin-top: 0.3rem;
 	font-size: 1.2rem;
 	font-weight: 200;
 }
-.projectDesc{
+.projectDesc {
 	font-size: 1rem;
 	position: absolute;
 	border-radius: 0.5rem;
@@ -73,44 +73,37 @@
 	border-radius: 1rem;
 	object-fit: cover;
 }
-.project a{
-    display: flex;
-    align-items: center;
-    font-size: 2.5rem;
-}
-
-.project-read-more{
-	margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.projects-header{
-	align-self: flex-start;
-	width: 35rem;
-	min-width: 15rem;
-	margin-right: 35rem;
-    font-size: 3rem;
-	font-weight: 600;
-	background-color: var(--bg-contact-color10);
-	border-radius: 0 1rem 1rem 0;
-padding: 1rem 4rem;
+.project a {
 	display: flex;
-	justify-content: flex-end;
+	align-items: center;
+	font-size: 2.5rem;
 }
 
-.visibleUp{
+.project-read-more {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.projects-header {
+	align-self: flex-start;
+	width: 100%;
+	font-size: 3rem;
+	font-weight: 800;
+	display: flex;
+	justify-content: center;
+}
+
+.visibleUp {
 	transform: translate(0);
 }
 
-
-
 @media only screen and (max-width: 950px) {
-    #projects{
-        height: auto;
-    }
-	.projects-header{
-		width: 28rem;
+	#projects {
+		height: auto;
+	}
+	.projects-header {
+		width: 100%;
 	}
 }

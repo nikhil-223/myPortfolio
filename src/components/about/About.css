@@ -1,4 +1,5 @@
 #about {
+	position: relative;
 	width: 100%;
 	background-color: #fafafa;
 	padding: 8rem 0rem 4rem 0;
@@ -14,15 +15,12 @@
 }
 .about-header {
 	align-self: flex-start;
-	width: 35rem;
-	min-width: 15rem;
+	width: 100%;
 	font-size: 3rem;
 	font-weight: 600;
-	background-color: var(--bg-contact-color10);
-	border-radius: 0 1rem 1rem 0;
 	padding: 1rem 4rem;
 	display: flex;
-	justify-content: flex-end;
+	justify-content:center;
 	z-index: 3;
 }
 .about-content {
@@ -81,17 +79,39 @@
 	z-index: 4;
 }
 .skill {
+	position: relative;
 	padding: 1rem;
-	background-color: rgb(247, 187, 187);
+	background-color: var(--bg-skill);
 	font-size: 1.5rem;
 	border-radius: 0.4rem;
 }
+
+.skillPercentage{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	top: 0;
+	left: 0;
+	border-radius: 0.4rem;
+	background-color: var(--bg-button-hover);
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+.skillPercentage:hover{
+	opacity: 1;
+}
+
 .about-illustration {
 	position: absolute;
 	height: fit-content;
 	right: 0;
+	bottom: -5rem;
 	z-index: 2;
-	transform: translate(-45%,-38%);
+	transform: translate(-45%,0%);
 	transition: all 1s;
 }
 .about-illustration img {
@@ -100,7 +120,15 @@
 	margin-right: 4rem;
 }
 .aboutIllVisible {
-	transform: translate(0%,-38%);
+	transform: translate(0%,0%);
+}
+
+.darkText{
+	color: var(--bg-heading-start);
+}
+
+.about-header .darkText:nth-child(2){
+	margin-left: 1rem;
 }
 
 @media only screen and (max-width: 950px) {
@@ -121,7 +149,7 @@
 		margin-top: 5rem;
 	}
 	.about-header {
-		width: 28rem;
+		width: 100%;
 	}
 	.about-illustration img{
 		margin-right: 0.5rem;

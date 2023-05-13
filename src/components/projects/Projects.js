@@ -69,7 +69,8 @@ const Projects = () => {
 	return (
 		<section id="projects">
 			<div className="projects-header">
-				<span>PROJECTS</span>
+				<span>
+					<span className="darkText">{`P`}</span>ROJECTS</span>
 			</div>
 			<div className="project-list">
 				{projects.map((item) => {

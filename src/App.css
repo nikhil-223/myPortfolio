@@ -7,7 +7,7 @@
     font-size: 12px;
     --text-color:#0b0f27;
     --bg-color1:#0b0f27;
-    --bg-color2:#6a8c91;
+    --bg-color2:#147290;
     --bg-color3:#E83F6F;
     --bg-color4:#0F5257;
     --bg-color5:#F2EFC7;
@@ -17,7 +17,11 @@
     --bg-contact-color9:#d5e5eb;
     --bg-contact-color10:#8bbfcd;
     --bg-contact-color11:#FAFAFA;
-    --bg-button:rgb(187, 219, 238);
+    --bg-button:rgba(95, 189, 196, 0.822);
+    --bg-skill:rgb(88, 211, 192);
+    --bg-button-hover:rgb(5 57 103);
+    --bg-heading-start:rgb(9 150 158);
+
 }
 html{
     scroll-behavior: smooth;
@@ -27,6 +31,7 @@ html{
 body{
     background: var(--bg-color1);
     font-family: 'Roboto', sans-serif;
+    color: #082533;
 }
 *{
     user-select: none;

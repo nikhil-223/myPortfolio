@@ -6,6 +6,7 @@
 	align-items: center;
 }
 .home-container {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	backdrop-filter: blur(0.2rem);
@@ -20,11 +21,10 @@
 
 .profile-info {
 	width: 100%;
-	min-width: 40rem;
+	min-width: 30rem;
 	height: 100%;
 	font-size: 5rem;
 	font-weight: 800;
-	color: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -179,6 +179,7 @@
 .home-illustration {
 	position: absolute;
 	bottom: 0rem;
+	right: 0;
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
@@ -206,7 +207,8 @@
 		text-align: center;
 	}
 	.scroll-indicator {
-		bottom: 25rem;
+		bottom: 19rem;
+		transform: scale(0.7);
 	}
 	.profile-info div:nth-child(2) {
 		font-size: 3rem;
@@ -217,11 +219,12 @@
 		font-size: 4.5rem;
 	}
 	.home-illustration {
-		bottom: 7rem;
+		bottom: 3rem;
 		z-index: -1;
 	}
 	.home-illustration img {
 		margin-right: 2rem;
+		width: 25rem;
 	}
 	.profile-info div:nth-child(3) {
 		font-size: 1.3rem;
