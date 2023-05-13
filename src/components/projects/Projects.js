@@ -11,20 +11,23 @@ const Projects = () => {
 	const projects = [
 		{
 			projectName: "Crypto Dashboard",
+			aboutProject: "an app to show real time cryptocurrency data ",
 			description: "",
 			imgURL: crypto,
 			github: "https://github.com/nikhil-223/cryptocurrency-project",
 			projectURL: "https://crypto-currency-board.netlify.app",
 		},
 		{
-			projectName: "Chatting App",
+			projectName: "Talkr",
+			aboutProject: "a chatting app",
 			description: "In progress",
 			imgURL: chatApp,
 			github: "https://github.com/nikhil-223/chatting-app",
 			projectURL: "https://chatttingapp.netlify.app",
 		},
 		{
-			projectName: "My Notepad",
+			projectName: "Noted",
+			aboutProject: "a note making app",
 			description: "In progress",
 			imgURL: inotepad,
 			github: "https://github.com/nikhil-223/inotepad",
@@ -32,6 +35,7 @@ const Projects = () => {
 		},
 		{
 			projectName: "Portfolio",
+			aboutProject: "My personal portfolio website",
 			description: "",
 			imgURL: portfolio,
 			github: "https://github.com/nikhil-223/myPortfolio",
@@ -39,7 +43,8 @@ const Projects = () => {
 		},
 		{
 			projectName: "CSS Challenges",
-			description: "",
+			aboutProject: "some css challenges",
+			description: "In progress",
 			imgURL: cssChallenges,
 			github: "https://github.com/nikhil-223/css-challenge-react",
 			projectURL: "https://css-challengesbynikhil.netlify.app/",
@@ -75,6 +80,7 @@ const Projects = () => {
 							imgURL={item.imgURL}
 							projectURL={item.projectURL}
 							projectDesc={item.description}
+							aboutProject={item.aboutProject}
 							github={item.github}
 						/>
 					);

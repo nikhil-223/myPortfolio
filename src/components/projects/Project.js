@@ -3,7 +3,7 @@ import { HiExternalLink } from "react-icons/hi";
 import { AiOutlineCodeSandbox } from "react-icons/ai";
 
 const Project = (props) => {
-	const { projectName, imgURL, projectURL,projectDesc,github } = props;
+	const { projectName, imgURL, projectURL,projectDesc,github ,aboutProject} = props;
 	return (
 		<div className={`project ${projectName}`}>
 			<a href={projectURL} target="blank">
@@ -13,7 +13,8 @@ const Project = (props) => {
 			<div className="project-details">
 				<div className="project-nameDesc">
 					<span>{projectName}</span>
-					<span className="projectDesc">{projectDesc}</span>
+					<span className="aboutProject">{aboutProject}</span>
+					{projectDesc!=="" && <span className="projectDesc">{projectDesc}</span>}
 				</div>
 				<div className="project-read-more">
 					<a href={projectURL} target="blank">

@@ -20,6 +20,7 @@
 	flex-wrap: wrap;
 }
 .project {
+	position: relative;
 	width: 38rem;
 	height: 30rem;
 	box-shadow: 7px 9px 19px -5px rgba(138, 124, 124, 0.84);
@@ -42,15 +43,28 @@
     align-items: flex-start;
     gap: 1rem;
 	padding: 1.5rem;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	font-weight: 600;
 }
 .project-nameDesc{
 	display: flex;
 	flex-direction: column;
 }
+
+.aboutProject{
+	margin-top: 0.3rem;
+	font-size: 1.2rem;
+	font-weight: 200;
+}
 .projectDesc{
 	font-size: 1rem;
+	position: absolute;
+	border-radius: 0.5rem;
+	top: 67%;
+	right: 2rem;
+	background-color: rgb(48, 113, 141);
+	padding: 0.5rem;
+	color: white;
 	font-weight: 200;
 }
 .project img {
