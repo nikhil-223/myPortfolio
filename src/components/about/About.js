@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import Skill from "./Skill";
-import AboutIllustration from "../../images/Blooming-pana1.svg";
+import AboutIllustration from "../../images/plants.svg";
 
 const About = (props, ref) => {
 	const { aboutIllVisible } = props;
