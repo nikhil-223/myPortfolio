@@ -72,7 +72,7 @@
 }
 
 .visible {
-	animation: faded 1s;
+	animation: faded 1s ease;
 }
 @keyframes faded {
 	0% {
@@ -152,7 +152,7 @@
 	opacity: 0;
 }
 .visibleRight {
-	animation: fadedr 1s linear;
+	animation: fadedr 1s ease;
 }
 @keyframes fadedr {
 	0% {
