@@ -31,7 +31,7 @@
 	padding: 1rem;
 	justify-self: flex-start;
 	transform: translatey(20%);
-	transition: all 0.2s  ease;
+	transition: transform 0.5s ease;
 }
 
 .project:hover {
