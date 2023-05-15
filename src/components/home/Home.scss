@@ -30,6 +30,9 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 4;
+	transform: translate(-30%);
+	opacity: 0;
+	transition: transform  1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .profile-info div:nth-child(1) span {
@@ -72,17 +75,8 @@
 }
 
 .visible {
-	animation: faded 1s ease;
-}
-@keyframes faded {
-	0% {
-		opacity: 0;
-		transform: translate(-30%);
-	}
-	100% {
-		opacity: 1;
-		transform: translate(0%);
-	}
+	opacity: 1;
+	transform: translate(0%);
 }
 
 .hidden {
@@ -151,19 +145,6 @@
 .hideScroll {
 	opacity: 0;
 }
-.visibleRight {
-	animation: fadedr 1s ease;
-}
-@keyframes fadedr {
-	0% {
-		opacity: 0;
-		transform: translate(30%);
-	}
-	100% {
-		opacity: 1;
-		transform: translate(0%);
-	}
-}
 
 @keyframes scrollDown {
 	0% {
@@ -183,6 +164,14 @@
 	justify-content: flex-end;
 	width: 100%;
 	z-index: 2;
+	opacity: 0;
+	transform: translate(30%);
+	transition: transform  1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.visibleRight {
+	opacity: 1;
+	transform: translate(0%);
 }
 .home-illustration img {
 	width: 30rem;
