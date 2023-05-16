@@ -30,7 +30,6 @@ const Contact = (props, ref) => {
 
 	//intersection observe for contact-box
 	if (contactVisible) {
-		console.log(contactVisible);
 		document.querySelector(".contact-box").classList.add("visibleUp");
 	}
 	return (

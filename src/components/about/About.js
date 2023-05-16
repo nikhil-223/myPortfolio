@@ -55,13 +55,18 @@ const About = (props, ref) => {
 		},
 	};
 
-	const isInView = useInView(illustrationRef,{margin:'-200px', once: true});
+	const isInView = useInView(illustrationRef, {
+		margin: "-25%",
+		once: true,
+	});
 	const animation = useAnimation();
 
 	useEffect(() => {
+		console.log(isInView);
 		if (isInView) {
 				animation.start('visible')	
 			}
+		// eslint-disable-next-line
 	}, [isInView])
 	
 	
