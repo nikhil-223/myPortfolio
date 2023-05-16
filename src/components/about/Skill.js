@@ -43,12 +43,10 @@ const Skill = (props) => {
 			animate={controls}
 			>
 			{skillName}
-			<motion.div
-				initial={{ opacity: 0 }}
-				whileHover={{ opacity: 1 }}
+			<div
 				className="skillPercentage">
 				{skillPercentage}
-			</motion.div>
+			</div>
 		</motion.span>
 	);
 };

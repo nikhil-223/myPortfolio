@@ -98,7 +98,13 @@
 	display: flex;
 	color: white;
 	justify-content: center;
+	opacity: 0;
 	align-items: center;
+	transition: all 0.3s;
+}
+
+.skillPercentage:hover{
+    opacity: 1;
 }
 
 .about-illustration {
