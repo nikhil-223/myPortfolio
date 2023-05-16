@@ -30,9 +30,6 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 4;
-	transform: translate(-30%);
-	opacity: 0;
-	transition: transform  1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .profile-info div:nth-child(1) span {
@@ -164,15 +161,8 @@
 	justify-content: flex-end;
 	width: 100%;
 	z-index: 2;
-	opacity: 0;
-	transform: translate(30%);
-	transition: transform  1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.visibleRight {
-	opacity: 1;
-	transform: translate(0%);
-}
 .home-illustration img {
 	width: 30rem;
 	height: 30rem;

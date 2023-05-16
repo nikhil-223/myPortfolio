@@ -1,15 +1,13 @@
-import React from "react";
+import React,{useEffect, useRef} from "react";
 import "./About.css";
 import Skill from "./Skill";
 import AboutIllustration from "../../images/plants.svg";
+import { motion,useInView,useAnimation} from "framer-motion";
 
 const About = (props, ref) => {
-	const { aboutIllVisible } = props;
-	if (aboutIllVisible) {
-		document
-			.querySelector(".about-illustration")
-			.classList.add("aboutIllVisible");
-	}
+
+	const illustrationRef = useRef(null)
+	
 	const skills = [
 		{ skillName: "HTML5", skillPercentage: "70%" },
 		{ skillName: "React.js", skillPercentage: "60%" },
@@ -33,8 +31,50 @@ const About = (props, ref) => {
 		{ skillName: "REST API", skillPercentage: "60%" },
 		{ skillName: "MongoDB", skillPercentage: "65%" },
 		{ skillName: "Java", skillPercentage: "60%" },
+		{ skillName: "Framer Motion", skillPercentage: "40%" },
 	];
 
+	//framer motions
+	const buttonVariants = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: {
+				duration: 1,
+			},
+		},
+	};
+	const illustrationVariants = {
+		hidden: { opacity: 0 , y:100  },
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1,
+			},
+		},
+	};
+	const skillSetVariants = {
+		hidden: { opacity: 0 , x:100  },
+		visible: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				type:'spring',
+			},
+		},
+	};
+
+	const isInView = useInView(illustrationRef,{margin:'-200px', once: true});
+	const animation = useAnimation();
+
+	useEffect(() => {
+		if (isInView) {
+				animation.start('visible')	
+				}
+	}, [isInView,animation])
+	
+	
 	return (
 		<section id="about">
 			<div className="about-container">
@@ -62,13 +102,21 @@ const About = (props, ref) => {
 							high-quality solutions, I'd love to connect and explore how I can
 							contribute to your team or project.
 						</div>
-						<div className="about-gtkm-contact  id-buttons">
+						<motion.div
+							className="about-gtkm-contact  id-buttons"
+							variants={buttonVariants}
+							initial="hidden"
+							animate='visible'>
 							<a href="#contact">Contact Me</a>
-						</div>
+						</motion.div>
 					</div>
 					<div className="about-skills">
 						<div className="about-skills-title">My Skills</div>
-						<div className="skill-set">
+						<motion.div
+							variants={skillSetVariants}
+							initial="hidden"
+							animate='visible'
+							className="skill-set">
 							{skills.map((item) => {
 								return (
 									<Skill
@@ -78,17 +126,21 @@ const About = (props, ref) => {
 									/>
 								);
 							})}
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
-			<div className={`about-illustration`} ref={ref}>
+			<motion.div className={`about-illustration`} 
+				ref={illustrationRef}
+				variants={illustrationVariants}
+				initial="hidden"
+				animate={animation}
+			>
 				<img
-					className={`${aboutIllVisible ? "aboutIllVisible" : "hide"}`}
 					src={AboutIllustration}
 					alt="home"
 				/>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

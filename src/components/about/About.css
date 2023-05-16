@@ -98,11 +98,6 @@
 	color: white;
 	justify-content: center;
 	align-items: center;
-	opacity: 0;
-	transition: all 0.2s ease;
-}
-.skillPercentage:hover{
-	opacity: 1;
 }
 
 .about-illustration {
@@ -111,8 +106,6 @@
 	right: 0;
 	bottom: -5rem;
 	z-index: 2;
-	transform: translate(-45%,0%);
-	transition: all 1s;
 }
 .about-illustration img {
 	width: 40rem;
