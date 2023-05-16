@@ -54,16 +54,6 @@ const About = (props, ref) => {
 			},
 		},
 	};
-	const skillSetVariants = {
-		hidden: { opacity: 0 , x:100  },
-		visible: {
-			opacity: 1,
-			x: 0,
-			transition: {
-				type:'spring',
-			},
-		},
-	};
 
 	const isInView = useInView(illustrationRef,{margin:'-200px', once: true});
 	const animation = useAnimation();
@@ -71,8 +61,8 @@ const About = (props, ref) => {
 	useEffect(() => {
 		if (isInView) {
 				animation.start('visible')	
-				}
-	}, [isInView,animation])
+			}
+	}, [isInView])
 	
 	
 	return (
@@ -112,10 +102,7 @@ const About = (props, ref) => {
 					</div>
 					<div className="about-skills">
 						<div className="about-skills-title">My Skills</div>
-						<motion.div
-							variants={skillSetVariants}
-							initial="hidden"
-							animate='visible'
+						<div
 							className="skill-set">
 							{skills.map((item) => {
 								return (
@@ -126,7 +113,7 @@ const About = (props, ref) => {
 									/>
 								);
 							})}
-						</motion.div>
+						</div>
 					</div>
 				</div>
 			</div>
