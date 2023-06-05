@@ -4,6 +4,7 @@ import crypto from "../../images/crypto.jpg";
 import Noted from "../../images/Noted.png";
 import portfolio from "../../images/Portfolio.png";
 import inotepad from "../../images/inotepad.png";
+import BookMyShow from "../../images/BookMyShow.png";
 import chatApp from "../../images/chatApp.png";
 import cssChallenges from "../../images/cssChallenges.png";
 import Project from "./Project";
@@ -33,6 +34,14 @@ const Projects = () => {
 			imgURL: inotepad,
 			github: "https://github.com/nikhil-223/inotepad",
 			projectURL: "https://inotepad.netlify.app",
+		},
+		{
+			projectName: "Movie booking backend project",
+			aboutProject: "an alma better capstone project",
+			description: "",
+			imgURL: BookMyShow,
+			github: "https://github.com/nikhil-223/bookmyshow-project-server",
+			projectURL: "https://bookmyshow-project-client.vercel.app",
 		},
 		{
 			projectName: "Noted",
